@@ -59,7 +59,6 @@ function validAnagram2($string1, $string2)
     return true;
 }
 
-
 echo "validAnagram2";
 
 var_dump(validAnagram2($string1, $string2));

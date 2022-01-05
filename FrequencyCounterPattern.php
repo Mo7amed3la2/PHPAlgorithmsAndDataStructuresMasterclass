@@ -1,6 +1,5 @@
 <?php
 
-
 $array1 = [1, 2, 3, 2, 5];
 $array2 = [4, 1, 9, 4, 25];
 
@@ -29,7 +28,6 @@ function same($array1, $array2)
 }
 
 var_dump(same($array1, $array2));
-
 
 function same2($array1, $array2)
 {
