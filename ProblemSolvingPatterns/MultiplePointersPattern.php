@@ -8,7 +8,7 @@ $numbers = [-4, -3, -2, -1, 0, 3, 4, 5];
  * @param  mixed $numbers
  * @return array
  */
-function sumZero($numbers) : array
+function sumZero($numbers): array
 {
     $left = 0;
     $right = count($numbers) - 1;
@@ -28,7 +28,7 @@ function sumZero($numbers) : array
 var_dump(sumZero($numbers));
 
 
-$numbers = [1,2,3,4,4,4,7,7,12,12,13];
+$numbers = [1, 2, 3, 4, 4, 4, 7, 7, 12, 12, 13];
 // $numbers = [1,1,1,1,12];
 
 /**
@@ -37,12 +37,12 @@ $numbers = [1,2,3,4,4,4,7,7,12,12,13];
  * @param  mixed $numbers
  * @return int
  */
-function countUniqueValues($numbers) : int
+function countUniqueValues($numbers): int
 {
     $unique = [];
-    foreach($numbers as $num){
-        if(!$unique[$num]){
-            $unique[$num] = $num; 
+    foreach ($numbers as $num) {
+        if (!$unique[$num]) {
+            $unique[$num] = $num;
         }
     }
     return count($unique);
@@ -58,12 +58,12 @@ var_dump(countUniqueValues($numbers));
  * @param  mixed $numbers
  * @return int
  */
-function countUniqueValues2($numbers) :int
+function countUniqueValues2($numbers): int
 {
-    if(count($numbers) == 0) return 0;
+    if (count($numbers) == 0) return 0;
     $c = 0;
-    for ($i=1; $i < count($numbers); $i++) { 
-        if($numbers[$c] != $numbers[$i]){
+    for ($i = 1; $i < count($numbers); $i++) {
+        if ($numbers[$c] != $numbers[$i]) {
             $c++;
             $numbers[$c] = $numbers[$i];
         }
