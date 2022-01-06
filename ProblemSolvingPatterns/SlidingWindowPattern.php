@@ -2,9 +2,9 @@
 
 echo "SlidingWindowPattern";
 
-// // example 1
-// $numbers = [1, 2, 5, 2, 8, 1, 5];
-// $num = 2;
+// example 1
+$numbers = [1, 2, 5, 2, 8, 1, 5];
+$num = 2;
 
 // // example 2
 // $numbers = [1,2,5,2,8,1,5];
