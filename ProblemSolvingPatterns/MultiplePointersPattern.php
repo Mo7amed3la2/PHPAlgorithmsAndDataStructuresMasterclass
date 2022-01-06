@@ -60,6 +60,7 @@ var_dump(countUniqueValues($numbers));
  */
 function countUniqueValues2($numbers) :int
 {
+    if(count($numbers) == 0) return 0;
     $c = 0;
     for ($i=1; $i < count($numbers); $i++) { 
         if($numbers[$c] != $numbers[$i]){
