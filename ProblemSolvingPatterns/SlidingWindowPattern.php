@@ -1,5 +1,4 @@
 <?php
-
 echo "SlidingWindowPattern";
 
 // example 1
