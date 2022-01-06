@@ -10,26 +10,30 @@ echo "SlidingWindowPattern";
 // $numbers = [1,2,5,2,8,1,5];
 // $num = 4;
 
-// example 3
-$numbers = [4, 2, 1, 6];
-$num = 1;
+// // example 3
+// $numbers = [4, 2, 1, 6];
+// $num = 1;
 
 // // example 4
-// $numbers = [4,2,1,6,2];
+// $numbers = [4, 2, 1, 6, 2];
 // $num = 4;
 function maxSubArraySum($numbers, $num)
 {
     if ($num == 1) {
         return max($numbers);
     }
-
+    $max = 0;
     for ($i = 0; $i < count($numbers) - 1; $i++) {
+        $temp = 0;
         for ($j = $i; $j <= ($i + $num) - 1; $j++) {
-            $sum[$i] = isset($sum[$i]) ? $sum[$i] + $numbers[$j] : $numbers[$i];
+            $temp +=  $numbers[$j];
+        }
+        if ($temp > $max) {
+            $max = $temp;
         }
     }
 
-    return max($sum);
+    return $max;
 }
 
 
