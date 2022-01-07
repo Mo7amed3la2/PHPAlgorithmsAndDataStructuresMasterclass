@@ -1,7 +1,7 @@
 <?php
 
-$string1 = 'sing';
-$string2 = 'sting';
+$string1 = 'abc';
+$string2 = 'abracadabra';
 
 /**
  * isSubsequence
