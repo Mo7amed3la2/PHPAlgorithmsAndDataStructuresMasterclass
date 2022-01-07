@@ -15,7 +15,6 @@ function maxSubarraySum($numbers, $num)
     $sum = $max;
     $total = 0;
     for ($i = $num; $i < count($numbers); $i++) {
-        var_dump($i);
         $sum += $numbers[$i] - $numbers[$i - $num];
         if ($sum  > $total) {
             $total = $sum;
