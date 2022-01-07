@@ -19,8 +19,8 @@ function sameFrequency($number1, $number2)
         $number2Count[$num2] = isset($number2Count[$num2]) ? $number2Count[$num2] + 1 : 1;
     }
 
-    foreach($number1Array as $value){
-        if(!isset($number2Count[$value]) || $number1Count[$value] != $number2Count[$value]){
+    foreach ($number1Array as $value) {
+        if (!isset($number2Count[$value]) || $number1Count[$value] != $number2Count[$value]) {
             return false;
         }
     }
