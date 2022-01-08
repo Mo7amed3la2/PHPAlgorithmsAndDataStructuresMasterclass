@@ -27,7 +27,7 @@ function lengthOfLongestSubstring($s): int
             $start++;
             $c++;
         } elseif (isset($countString[$newString[$start]])) {
-            var_dump("dub here {$newString[$start]}");
+            // var_dump("dub here {$newString[$start]}");
             if ($c >= $end) {
                 $end = $c;
             }
