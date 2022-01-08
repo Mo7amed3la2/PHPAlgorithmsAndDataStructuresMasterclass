@@ -1,6 +1,12 @@
 <?php
-
-function lengthOfLongestSubstring($s)
+// Write a function called findLongestSubstring, which accepts a string and returns the length of the longest substring with all distinct characters.
+/**
+ * lengthOfLongestSubstring
+ *
+ * @param  mixed $s
+ * @return int
+ */
+function lengthOfLongestSubstring($s): int
 {
     if ($s == '') {
         return 0;
@@ -35,7 +41,7 @@ function lengthOfLongestSubstring($s)
         }
         // var_dump($countString);
         // var_dump("start $start - c $c - end $end");
-        if ($start == count($newString) ) {
+        if ($start == count($newString)) {
             break;
         }
     }
